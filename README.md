@@ -1,11 +1,11 @@
-#World countries in JSON
+# Calling codes of the world's countries in JSON.
 ### This is a fork of https://github.com/mledoze/countries. Look there for the original data set.
 ## Countries data
-This repository contains lists of world countries in JSON. Each line contains the country:
+Each line contains a country's:
 
- - `common name` - common name in english
+ - common name in english
 
- - calling code(s) (`callingCode`)
+ - calling code
 
 ##Examples
 #####JSON
