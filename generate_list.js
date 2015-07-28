@@ -12,6 +12,17 @@ var filteredCountries = countries
   .filter(function(country) {
     return country.value !== undefined;
   })
+  .sort(function(countryA, countryB) {
+    var nameA = countryA.label;
+    var nameB = countryB.label;
+    if (nameA > nameB) {
+      return 1;
+    }
+    if (nameA < nameB) {
+      return -1;
+    }
+    return 0;
+  });
 
 fs.writeFileSync('country_calling_codes.json', JSON.stringify(filteredCountries));
 
